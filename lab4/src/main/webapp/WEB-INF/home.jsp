@@ -13,7 +13,8 @@
    
     </head>
     <body>
-         <h1>Hello ${username}</h1>
+         <h1>Home Page </h1>
+         <h2>Hello ${username}</h2>
          <br><!-- comment -->
          <a href="login?logout">LogOut</a>
     </body>
