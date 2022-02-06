@@ -15,6 +15,6 @@
     <body>
          <h1>Hello ${username}</h1>
          <br><!-- comment -->
-         <link href="">
+         <a href="login?logout">LogOut</a>
     </body>
 </html>
