@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
         
         if(session.getAttribute("username") !=null){
             response.sendRedirect("home");
+            retuen;
         }
         String query = request.getQueryString();
         
