@@ -37,14 +37,17 @@ public class LoginServlet extends HttpServlet {
         HttpSession session =request.getSession();
         
         if(session.getAttribute("username") !=null){
-            response.sendRedirect("home");
-            retuen;
-        }
+        
         String query = request.getQueryString();
         
         if(query != null && query.contains("logout")){
             
+            session.invalidate();
         }
+             response.sendRedirect("home");
+            return;
+        }
+        
         getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
 
